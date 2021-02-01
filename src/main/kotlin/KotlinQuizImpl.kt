@@ -5,7 +5,8 @@ class KotlinQuizImpl : Quiz {
         return outString
     }
 
-    override fun rangePlay(): String = (6 until 30 step 2).joinToString(prefix = "nums: ", separator = ", ")
+    override fun rangePlay(n: Int?, stepVal: Int?): String =
+        (0 until (n ?: 0) step (stepVal ?: 1)).joinToString(prefix = "nums: ", separator = ", ")
 
     override fun safePrintList(nullableList: List<String?>) {
         for (item in nullableList) {
@@ -13,5 +14,6 @@ class KotlinQuizImpl : Quiz {
         }
     }
 
-    override fun easyTernary(input: String): Unit = if (input == "True") print("true") else print("false")
+    override fun easyTernary(input: String): Unit =
+        if (input == "True") print("true") else print("false")
 }

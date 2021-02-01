@@ -9,7 +9,7 @@ public class JavaQuizImpl implements Quiz {
   }
 
   @Override
-  public String rangePlay() {
+  public String rangePlay(Integer n, Integer stepVal) {
     return null;
   }
 
