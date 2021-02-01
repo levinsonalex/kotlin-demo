@@ -23,10 +23,10 @@ public interface Quiz {
   public String rangePlay(Integer n, Integer stepVal);
 
   /**
-   * Print out each non-null values on a new line
+   * Sums the length of all the strings.
    * @param stringList, a list with potentially null string values
    */
-  public void safePrintList(List<String> stringList);
+  public Integer sumStringSizes(List<String> stringList);
 
   /**
    * Prints "true" if input equals "true", and "false" if not

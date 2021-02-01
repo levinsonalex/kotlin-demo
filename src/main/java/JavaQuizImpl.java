@@ -14,8 +14,8 @@ public class JavaQuizImpl implements Quiz {
   }
 
   @Override
-  public void safePrintList(List<String> stringList) {
-
+  public Integer sumStringSizes(List<String> stringList) {
+    return null;
   }
 
   @Override
